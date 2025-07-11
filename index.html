@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sir Ahmed — Poetry Card</title>
+  <style>
+    @import url('https://fonts.googleapi');
+
+    body {
+      margin: 0; padding: 0;
+      background-image: url('https://t4.ftcdn.net/jpg/03/89/79/31/360_F_389793152_7sDxHihIWbSM2AOLn2Kd3DSTYaNgc3sa.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      color: #50340a;
+      overflow: hidden;
+    }
+
+    .glass-card {
+      position: relative;
+      width: 90%;
+      max-width: 500px;
+      max-height: 80vh;
+      background: rgb(206, 178, 143);
+      border-radius: 15px;
+      box-shadow: 0 8px 30px  rgb(196, 163, 124);
+      backdrop-filter: blur(8px);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      animation: fadeIn 1.2s ease-out;
+    }
+
+   .title {
+  padding: 1rem;
+  color: brown;
+  text-shadow: 1px 1px 1px rgb(155, 70, 70);
+  background: rgba(226, 64, 64, 0.1);
+  text-align: center;
+  font-size: clamp(1.4rem, 4vw, 1.8rem);
+  border-bottom: 1px solid rgb(83, 18, 18);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+    .poetry {
+      padding: 1rem;
+      overflow-y: auto;
+      flex: 1;
+      font-size: clamp(1rem,3.2vw,1.3rem);
+      line-height: 1.8;
+      direction: rtl;
+      text-align: right;
+    }
+
+    .dua {
+      padding: 1rem;
+      color: rgb(129, 25, 25);
+      background:  rgba(226, 64, 64, 0.2);
+      font-size: clamp(1rem,3vw,1.25rem);
+      text-align: center;
+      border-top: 1px solid rgb(83, 18, 18);
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Scrollbar styling */
+    .poetry::-webkit-scrollbar {
+      width: 4px;
+    }
+    .poetry::-webkit-scrollbar-thumb {
+      background: rgb(83, 18, 18);
+      border-radius: 3px;
+    }
+
+    @media (max-width: 400px) {
+      .title { font-size: 1.2rem; }
+      .poetry, .dua { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="glass-card">
+    <div class="title">استادِ محترم کے نام اشعار</div>
+    <div class="poetry">
+      فزکس کے ہر فارمولا کی جان ہیں آپ،<br>
+      ریاضی کے ہر سوال کا آسان جواب ہیں آپ۔<br><br>
+      جہاں لاجک رک جائے، وہاں سے آپ سکھاتے،<br>
+      نیوٹن ہو یا آئن سٹائن، سب کو ہنس کے سمجھاتے۔<br><br>
+      زاویے، قاعدے، ویلز کی روانی،<br>
+      آپ کی کلاس میں آتی ہے نئی زندگانی۔<br><br>
+      ہر لیکچر میں علم کا ہوتا ہے کمال،<br>
+      ہو جائے جو آپ کا شاگرد، وہ ہو جائے مالا مال۔<br><br>
+      دعا ہے کہ زندگی ہو آپ کی خوشیوں سے بھری،<br>
+      ہر سال لائے آپ کے لیے نئی کامیابی کی ڈگری۔<br><br>
+    </div>
+    <div class="dua">
+       May Allah bless your life with joy, wisdom, and endless success. — Ameen
+    </div>
+  </div>
+
+</body>
+</html>
